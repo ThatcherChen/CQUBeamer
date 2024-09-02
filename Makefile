@@ -3,7 +3,7 @@ SRCS:=slide.tex
 all: beamer
 
 beamer:
-	latexmk -xelatex -pdf $(SRCS)
+	latexmk -xelatex $(SRCS)
 
 clean:
 	for f in $(SRCS); do \
